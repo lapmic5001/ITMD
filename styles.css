@@ -1,0 +1,164 @@
+/* Global Styles */
+body {
+    background: #000; /* Dark background */
+    font-family: "Courier New", Courier, monospace;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Re-enable scrolling */
+}
+
+/* Container Styling */
+.container {
+    position: relative;
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow:
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff; /* Neon shadow */
+    border-radius: 15px;
+    border: 2px solid #ff00ff;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png"); /* Neon grid background */
+}
+
+/* Header Styling */
+.header h1 {
+    font-size: 2.5em;
+    color: #00ffff; /* Neon cyan */
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff;
+    margin-bottom: 20px;
+}
+
+/* Upload Container Styling */
+.upload-container {
+    margin-top: 20px;
+}
+
+.upload-button,
+.decode-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff00ff; /* Neon pink */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    box-shadow:
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff;
+}
+
+.upload-button:hover,
+.decode-button:hover {
+    background-color: #00ffff; /* Neon cyan */
+    box-shadow:
+        0 0 20px #00ffff,
+        0 0 40px #00ffff;
+}
+
+/* Output Message Styling */
+.output-message {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #fff;
+    min-height: 50px;
+    max-height: 300px; /* Limit height for scrolling */
+    overflow-y: auto; /* Enable scrolling for long messages */
+    padding: 10px;
+    border: 1px solid #ff00ff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loading-overlay p {
+    font-size: 1.5em;
+    color: #ff00ff; /* Neon pink */
+    margin-top: 20px;
+    text-shadow:
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff;
+}
+
+/* Spinner Animation */
+.spinner {
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-top: 8px solid #00ffff; /* Neon cyan */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Neon-Themed Scrollbars */
+.output-message {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #fff;
+    min-height: 50px;
+    max-height: 300px; /* Limit height for scrolling */
+    overflow-y: auto; /* Enable scrolling for long messages */
+    padding: 10px;
+    border: 1px solid #ff00ff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #00ffff #000; /* For Firefox */
+}
+
+/* Webkit Scrollbar Styling (Chrome, Safari) */
+.output-message::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.output-message::-webkit-scrollbar-track {
+    background: #000; /* Track background color */
+    border-radius: 10px; /* Rounded corners for the scrollbar track */
+    box-shadow: inset 0 0 5px #ff00ff; /* Neon glow effect */
+}
+
+.output-message::-webkit-scrollbar-thumb {
+    background-color: #00ffff; /* Thumb color */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+    border: 2px solid #000; /* Border color around the thumb */
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff; /* Neon glow effect */
+}
+
+/* Hover Effect for Thumb */
+.output-message::-webkit-scrollbar-thumb:hover {
+    background-color: #ff00ff; /* Thumb color on hover */
+    box-shadow:
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff; /* Neon glow effect on hover */
+}
