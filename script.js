@@ -36,8 +36,8 @@ const colorToCharMap = {
     "#FF6347": "7", // Tomato
     "#6B8E23": "8", // Olive Drab
     "#B0E0E6": "9", // Powder Blue
-    "#FFFFFF": "", // White (Underscore)
-    "#000000": "", // Black (Dash)
+    "#FFFFFF": "_", // White (Underscore)
+    "#000000": "-", // Black (Dash)
     "#F5F5F5": " ", // White Smoke (Space)
     "#FFB6C1": ".", // Light Pink (Period)
     "#8B4513": ",", // Saddle Brown (Comma)
